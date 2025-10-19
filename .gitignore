@@ -11,11 +11,14 @@ venv/
 env/
 ENV/
 
-# --- PyCharm / VSCode settings ---
+# --- PyCharm project files ---
 .idea/
+*.iml
+
+# --- VS Code settings ---
 .vscode/
 
-# --- Build / packaging ---
+# --- Build and packaging ---
 build/
 dist/
 *.egg-info/
@@ -33,23 +36,16 @@ coverage.xml
 # --- Jupyter Notebook checkpoints ---
 .ipynb_checkpoints/
 
-# --- Logs & temp files ---
+# --- Logs and temporary files ---
 *.log
 *.tmp
 *.bak
 *.swp
 
-# --- OS-specific files ---
+# --- OS-specific ---
 .DS_Store
 Thumbs.db
 
 # --- Installer logs ---
 pip-log.txt
 pip-delete-this-directory.txt
-
-# --- Project-specific (optional) ---
-# Ignore requirements lock files if generated dynamically
-# requirements.lock
-
-# --- Compiled extensions ---
-*.so
