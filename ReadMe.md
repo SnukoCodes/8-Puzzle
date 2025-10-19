@@ -14,16 +14,17 @@ The main purpose is to study the behavior of A* search with different heuristics
 2. Software Architecture Diagram
 ```mermaid
 flowchart TB
-    main[main.py<br/>Entry point] --> app[app.py<br/>CLI, input, printing, flow control]
+    main[main.py - Entry point] --> app[app.py - CLI, input, printing, flow control]
 
-    app --> puzzle[puzzle.py<br/>Puzzle8, moves, solvability]
-    app --> game[game.py<br/>A* search, heuristics, successor states]
-    app --> state[state.py<br/>State alias, GOAL, utils]
+    app --> puzzle[puzzle.py - Puzzle8, moves, solvability]
+    app --> game[game.py - A* search, heuristics, successor states]
+    app --> state[state.py - State alias, GOAL, utils]
 
-    game --> node[node.py<br/>Node (f, g, h, parent)]
+    game --> node[node.py - Node: f, g, h, parent]
     game --> state
     puzzle --> state
     node --> state
+
 ```
 
 
